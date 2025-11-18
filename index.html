@@ -1,0 +1,38 @@
+<!-- tower-defense-webgl/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebGL Tower Defense</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>WebGL Tower Defense (Basic)</h1>
+  <div id="instructions">
+    Click on grass tiles to place towers (cost: 50). Towers cannot be placed on the road.
+    Press <strong>“Start Next Wave”</strong> to send enemies. Don’t let them reach the end!
+  </div>
+
+  <div id="gameWrapper">
+    <!-- WebGL background -->
+    <canvas id="bg" width="768" height="448"></canvas>
+    <!-- 2D game objects -->
+    <canvas id="game" width="768" height="448"></canvas>
+
+    <div id="ui">
+      <div id="stats">
+        <span class="label">Money:</span> <span id="money">0</span>
+        &nbsp;•&nbsp;
+        <span class="label">Lives:</span> <span id="lives">0</span>
+        &nbsp;•&nbsp;
+        <span class="label">Wave:</span> <span id="wave">0</span>
+      </div>
+      <button id="startWaveBtn">Start Next Wave</button>
+    </div>
+    <div id="message"></div>
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>
