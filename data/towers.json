@@ -1,0 +1,30 @@
+// tower-defense-webgl/data/towers.json
+{
+  "baseCost": 50,
+  "levels": [
+    {
+      "name": "Core Tower Lv1",
+      "range": 120,
+      "fireDelay": 0.5,
+      "damage": 25
+    },
+    {
+      "name": "Core Tower Lv2",
+      "range": 130,
+      "fireDelay": 0.45,
+      "damage": 35
+    },
+    {
+      "name": "Core Tower Lv3",
+      "range": 140,
+      "fireDelay": 0.4,
+      "damage": 50
+    },
+    {
+      "name": "Core Tower Lv4",
+      "range": 150,
+      "fireDelay": 0.35,
+      "damage": 70
+    }
+  ]
+}
